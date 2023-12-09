@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Converter</title>
+      <link rel="stylesheet" href="../Styles/Converter.css">
+  </head>
+  <body>
+    <button class="openBTN" id="openTempBtn">Temperature</button>
+    <button class="openBTN" id="openHeightBtn">Height</button>
+    
+    <div id="temp-popup-container"
+    class="temp-popup-container">
+        <h2>Temperature Converter</h2>
+    
+        <div>
+            <label for="celsiusInput">Celsius:</label>
+            <input type="number" id="celsiusInput">
+        </div>  
+    
+        <div>
+            <label for="fahrenheitInput">Fahrenheit:</label>
+            <input type="number" id="fahrenheitInput">
+        </div>
+    
+        <button class="Btnconvert" id="convertBtn">Convert</button>
+        <button class="Btnclear" id="clearBtn">Clear</button>
+        <button class="Btnreturn" id="returnBtn">Return</button>
+    </div>
+
+    <div id="height-popup-container"
+    class="height-popup-container">
+      <h2>Height Converter</h2>
+
+      <div>
+        <label for="meterInput">Meters:</label>
+        <input type="number" id="meterInput">
+    </div>
+
+    <div>
+        <label for="feetInput">Feet:</label>
+        <input type="number" id="feetInput">
+    </div>
+
+      <button class="Btnconvert" id="convertHeightBtn">Convert</button>
+      <button class="Btnclear" id="clearHeightBtn">Clear</button>
+      <button class="Btnreturn" id="returnHeightBtn">Return</button>
+    </div>
+  </body>
+  <script src="../Javascript/Converter.js"></script>
+</html>

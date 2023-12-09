@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payroll</title>
+    <link rel="stylesheet" href="../Styles/Payroll.css">
+</head>
+
+<body>
+    <div id="manageContainer">
+        <h2>Manage Employees</h2>
+        <label for="employeeName">Employee Name:</label>
+        <br>
+        <input class="manageInput" type="text" id="employeeName">
+        <br>
+        <label for="daysWorked">Days Worked:</label>
+        <br>
+        <input class="manageInput" type="number" id="daysWorked">
+        <br>
+        <label for="dailyRate">Daily Rate:</label>
+        <br>
+        <input class="manageInput" type="number" id="dailyRate">
+        <br>
+        <label for="deductionAmount">Deduction Amount:</label>
+        <br>
+        <input class="manageInput" type="number" id="deductionAmount">
+        <br>
+        <button class="containerBtn" id="addEmployeeBtn">Add Employee</button>
+        <button class="containerBtn" id="clearFieldsBtn">Clear</button>
+    </div>
+
+    <div id="deleteContainer">
+        <h2>Remove Employees</h2>
+        <label for="deleteEmployeeInput">Employee No. to Delete:</label>
+        <br>
+        <input class="deleteInput" type="number" id="deleteEmployeeInput">
+        <br>
+        <button class="containerBtn" id="deleteEmployeeBtn">Delete Employee</button>
+        <button class="containerBtn" id="clearTableBtn">Clear Table</button>
+    </div>
+    <div class="empCounter">
+        <h2>Employee Counter</h2>
+        <div id="employeeCounter"></div>
+    </div>
+
+    <div id="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Employee Name</th>
+                    <th>Days Worked</th>
+                    <th>Daily Rate</th>
+                    <th>Gross Pay</th>
+                    <th>Deduction Amount</th>
+                    <th>Net Pay</th>
+                </tr>
+            </thead>
+            <tbody id="payrollBody"></tbody>
+        </table>
+    </div>
+
+    <div id="confirmationModal">
+        <p id="confirmationMessage"></p>
+        <div class="modal-button-container">
+            <button class="modalBtn" id="confirmActionBtn">Yes</button>
+            <button class="modalBtn" id="cancelActionBtn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="../Javascript/Payroll.js"></script>
+</body>
+
+</html>

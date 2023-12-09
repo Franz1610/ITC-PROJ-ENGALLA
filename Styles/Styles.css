@@ -1,0 +1,66 @@
+body {
+    background-image: url("../Images/BackgroundResize.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button {
+    margin-bottom: 25px; 
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container{
+    margin-bottom:250px ;
+}
+
+.Convert {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+}
+
+.TaxCalc {
+    background-image: linear-gradient(to right, #283048 0%, #859398 51%, #283048 100%);
+}
+
+.SumFact {
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE 51%, #003973 100%);
+}
+
+.pay {
+    background-image: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%);
+}
+
+button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.name, .section {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
